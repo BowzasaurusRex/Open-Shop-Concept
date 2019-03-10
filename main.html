@@ -1,0 +1,230 @@
+<html>
+	<title>Open Shop Channel</title>
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<meta charset="utf-8">
+	
+	<style>
+		#textOpenShop {
+			height: 38;
+			width: 332;
+			background: url("img/common/tl.png") no-repeat top left;
+			background-color: rgb(255, 255, 255);
+			margin-top: -20px;
+		}
+		#textOpenShop:hover {
+			height: 38;
+			width: 332;
+			background: url("img/common/tl.png") no-repeat top left;
+			background-color: rgb(196, 241, 252);
+		}
+		#textOpenShop div {
+			background: url("img/common/tr.png") no-repeat top right;
+		}
+		#textOpenShop div div {
+			background: url("img/common/bl.png") no-repeat bottom left;
+		}
+		#textOpenShop div div div {
+			background: url("img/common/br.png") no-repeat bottom right;
+			height: 38;
+		}
+		
+		#buttonEmulated {
+			background: url("img/front/btn_emulated.png");
+			width: 190;
+			height: 145;
+			margin-top: 20px;
+			display: inline-block;
+		}
+		#buttonEmulated:hover {
+			background: url("img/front/btn_emulated_ov.png");
+			width: 190;
+			height: 145;
+			margin-top: 20px;
+		}
+		#buttonHomebrew {
+			background: url("img/front/btn_homebrew.png");
+			width: 190;
+			height: 145;
+			margin-top: 20px;
+			display: inline-block;
+		}
+		#buttonHomebrew:hover {
+			background: url("img/front/btn_homebrew_ov.png");
+			width: 190;
+			height: 145;
+			margin-top: 20px;
+		}
+		#buttonPatch {
+			background: url("img/front/btn_patches.png");
+			width: 190;
+			height: 145;
+			margin-top: 20px;
+			display: inline-block;
+		}
+		#buttonPatch:hover {
+			background: url("img/front/btn_patches_ov.png");
+			width: 190;
+			height: 145;
+			margin-top: 20px;
+		}
+		
+		
+		#buttonBottom {
+			background: url("img/front/btn_footer.png");
+			width: 186;
+			height: 60;
+			margin-top: 20px;
+			display: inline-block;
+		}
+		#buttonBottom:hover {
+			background: url("img/front/btn_footer_ov.png");
+			width: 186;
+			height: 60;
+			margin-top: 20px;
+		}
+		
+		#buttonBottomText {
+			position: absolute;
+			margin-left: 30px;
+			margin-top: 20px;
+			color: black;
+		}
+		#hoverMessageEmulated {
+			position: absolute;
+			background: url("img/front/mouse_over.png") no-repeat;
+			width: 155;
+			height: 45;
+			visibility: hidden;
+		}
+		#hoverMessageDetectEmulated {
+			position: absolute;
+			width: 193;
+			height: 172;
+			margin-top: -172px;
+		}
+		#hoverMessageDetectEmulated:hover #hoverMessageEmulated {
+			visibility: visible;
+		}
+		#hoverMessageWii {
+			position: absolute;
+			background: url("img/front/mouse_over.png") no-repeat;
+			width: 155;
+			height: 45;
+			visibility: hidden;
+		}
+		#hoverMessageDetectWii {
+			position: absolute;
+			width: 193;
+			height: 172;
+			margin-top: -172px;
+		}
+		#hoverMessageDetectWii:hover #hoverMessageWii {
+			visibility: visible;
+		}
+		#hoverMessagePatch {
+			position: absolute;
+			background: url("img/front/mouse_over.png") no-repeat;
+			width: 155;
+			height: 45;
+			visibility: hidden;
+		}
+		#hoverMessageDetectPatch {
+			position: absolute;
+			width: 193;
+			height: 172;
+			margin-top: -172px;
+		}
+		#hoverMessageDetectPatch:hover #hoverMessagePatch {
+			visibility: visible;
+		}
+		#hoverMessageText {
+			position: absolute;
+			margin-left: 15px;
+			margin-top: -3px;
+			color: black;
+		}
+		#buttonGeneric {
+			position: absolute;
+			background: url("img/common/btn.png") no-repeat;
+			width: 202;
+			height: 63;
+		}
+		#buttonGeneric:hover {
+			background: url("img/common/btn_ov.png") no-repeat;
+			width: 202;
+			height: 63;
+			margin-top: 20px;
+		}
+		#buttonText {
+			color: black;
+			margin-top: 100px;
+			margin-left: 15px;
+		}
+	</style>
+	<body>
+		<!--Header-->
+		<a href="index.html" style="text-decoration: none;"><div id="textOpenShop"><div><div><div>
+			<h1 style="color: rgb(52, 190, 237); margin-top: 50px; margin-left: 10px; position: abosulute;">Open Shop Channel</h1>
+		</div></div></div></div></a>
+		<h6 style="color: rgb(142, 148, 168); position: absolute; margin-top: -5px;">• • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • </h6>
+		
+		<!--Platform selection buttons-->
+		
+		<a href="list/titles/emulated/index.html" style="text-decoration: none;">
+			<div id="hoverMessageDetectEmulated" style="margin-top: 0px;">
+				<div id="buttonEmulated">
+					<p id="buttonText">Emulated Homebrew</p>
+				</div>
+				<div id="hoverMessageEmulated" style="margin-top: -170px; margin-left: -5px;">
+					<p id="hoverMessageText">Homebrew for<br>classic systems</p>
+				</div>
+			</div>
+		</a>	
+		
+		<a href="list/titles/wii/index.html" style="text-decoration: none;">
+			<div id="hoverMessageDetectWii" style="margin-top: 0px; margin-left: 200px;">
+				<div id="buttonHomebrew">
+					<p id="buttonText" style="margin-left: 40px;">Wii Homebrew</p>
+				</div>
+				<div id="hoverMessageWii" style="margin-top: -170px; margin-left: 17px;">
+					<p id="hoverMessageText">Homebrew titles are available here</p>
+				</div>
+			</div>
+		</a>
+		
+		<a href="list/titles/patch/index.html" style="text-decoration: none;">
+			<div id="hoverMessageDetectPatch" style="margin-top: 0px; margin-left: 400px;">
+				<div id="buttonPatch">
+					<p id="buttonText" style="margin-left: 65px;">Patches</p>
+				</div>
+				<div id="hoverMessagePatch" style="margin-top: -170px; margin-left: 40px;">
+					<p id="hoverMessageText">Patches to enhance your Wii</p>
+				</div>
+			</div>
+		</a>
+		
+		<div style="height: 204px;"></div>
+		<!--Bottom menu-->
+		<a href="settings/activity/index.html"><div id="buttonBottom">
+			<p id="buttonBottomText">Account Activity</p>
+		</div></a>
+		<a href="settings/recent/index.html"><div id="buttonBottom">
+			<p id="buttonBottomText">Recently Viewed</p>
+		</div></a>
+		<a href="settings/more/index.html"><div id="buttonBottom">
+			<p id="buttonBottomText" style="margin-left: 60px;">Settings</p>
+		</div></a>
+		
+		<h6 style="color: rgb(142, 148, 168); position: absolute; margin-top: 5px;">• • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • </h6>
+		<br>
+		
+		<!--Footer buttons-->
+		<div id="buttonGeneric" style="margin-top: 17px; margin-left: 380px;">
+			<p style="margin-left: 40px; margin-top: 20px;">Shopping Guide</p>
+		</div>
+		
+		<div id="buttonGeneric" style="margin-top: 17px;">
+			<p style="margin-left: 65px; margin-top: 20px;">Wii Menu</p>
+		</div>
+	</body>
+</html>
