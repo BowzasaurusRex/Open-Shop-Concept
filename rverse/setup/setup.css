@@ -1,0 +1,52 @@
+body {
+	background-color: black;
+}
+.topscreen {
+	width: 400px;
+	height: 240px;
+	background-color: white;
+}
+.bottomscreen {
+	width: 320px;
+	height: 240px;
+	margin-left: 40px;
+	background: url("../img/common/bg.png");
+}
+.TitleText {
+	font-family: arial;
+	font-size: 20px;
+	color: rgb(104, 199, 35);
+}
+.ButtonSetupLeft {
+	float: left;
+	margin-top: 208px;
+	background-image: url("../img/btn/btn_setup_back.png");
+	width: 77px;
+	height: 32px;
+}
+.ButtonSetupRight {
+	float: right;
+	margin-top: 208px;
+	background-image: url("../img/btn/btn_setup_next.png");
+	width: 77px;
+	height: 32px;
+}
+.SetupMessage {
+	position: absolute;
+	background: url("../img/setup/setup_message.png");
+	width: 290px;
+	height: 85px;
+	top: 293px;
+	left: 60px;
+}
+.SetupMessageText {
+	position: absolute;
+	top: -10px;
+	left: 10px;
+}
+.NextBackButtonText {
+	position: relative;
+	top: -6.4px;
+	left: 15px;
+	color: black;
+}
