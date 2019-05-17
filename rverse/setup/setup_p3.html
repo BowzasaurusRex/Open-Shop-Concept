@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="setup.css">
+</head>
+<body>
+<div class="topscreen">
+	<center><br>
+		<p class="TitleText">Configuring Notification Alerts</p>
+	</center>
+</div>
+<div class="bottomscreen">
+	<a href="setup_p2.html" style="text-decoration: none;">
+		<div class="ButtonSetupLeft">
+			<p class="NextBackButtonText">Back</p>
+		</div>
+	</a>
+	<div class="ButtonSetupRight" id="btnNext">
+		<p class="NextBackButtonText" style="left: 25px;">Next</p>
+	</div>
+	
+	<div class="SetupMessage" style="top: 270px;">
+		<p class="SetupMessageText">
+			Do you want to be alerted via the<br>
+			Miiverse icon when you receive<br>
+			notifications?<br>
+			This setting can be changed later.
+		</p>
+	</div>
+	
+	<div class="BtnSetupAlert" id="btn1">
+		<p class="NextBackButtonText" id="btnTxt1" style="top: -10px; left: 55px;">Alert</p>
+	</div>
+	<div class="BtnSetupAlertDivide"></div>
+	<div class="BtnSetupNoAlert" id="btn2">
+		<p class="NextBackButtonText" id="btnTxt2" style="top: -10px; left: 35px;">Don't Alert</p>
+	</div>
+</div>
+
+<script>
+	var alert = 0
+	var noalert = 0
+	
+	<!--Run function if the user clicks on a button-->
+	document.getElementById('btn1').addEventListener("click", ToggleAlert);
+	document.getElementById('btn2').addEventListener("click", ToggleNoAlert);
+	document.getElementById('btnNext').addEventListener("click", NextPage);
+	
+	<!--Change the left button's image to btn_setup_alert_click.png, and the right button's to btn_setup_noalert.png.-->
+	<!--Change the left button's text color to white, and the right button's to black.-->
+	<!--Set alert to 1, and noalert to 0.-->
+	function ToggleAlert() {
+		noalert = 0;
+		alert = 1;
+		document.getElementById("btn1").style.backgroundImage = 'url("../img/btn/btn_setup_alert_click.png")';
+		document.getElementById("btn2").style.backgroundImage = 'url("../img/btn/btn_setup_noalert.png")';
+		document.getElementById("btnTxt1").style.color = 'white';
+		document.getElementById("btnTxt2").style.color = 'black';
+	}
+	
+	<!--Change the right button's image to btn_setup_noalert_click.png, and the left button's to btn_setup_alert.png.-->
+	<!--Change the right button's text color to white, and the left button's to black.-->
+	<!--Set noalert to 1, and alert to 0.-->
+	function ToggleNoAlert() {
+		noalert = 1;
+		alert = 0;
+		document.getElementById("btn2").style.backgroundImage = 'url("../img/btn/btn_setup_noalert_click.png")';
+		document.getElementById("btn1").style.backgroundImage = 'url("../img/btn/btn_setup_alert.png")';
+		document.getElementById("btnTxt1").style.color = 'black';
+		document.getElementById("btnTxt2").style.color = 'white';
+	}
+	
+	<!--if either alert or noalert is equal to 1, go to the next page.-->
+	function NextPage() {
+		if (alert === 1 || noalert === 1) {
+			window.location = "setup_p4.html";
+		}
+	}
+</script>
