@@ -39,6 +39,14 @@ body {
 	top: 293px;
 	left: 60px;
 }
+.SetupMessage2 {
+	position: absolute;
+	background: url("../img/setup/setup_message2.png");
+	width: 290px;
+	height: 169px;
+	top: 270px;
+	left: 60px;
+}
 .SetupMessageText {
 	position: absolute;
 	top: -10px;
@@ -49,4 +57,41 @@ body {
 	top: -6.4px;
 	left: 15px;
 	color: black;
+}
+.BtnSetupAlert {
+	position: absolute;
+	width: 143px;
+	height: 31px;
+	background-image: url("../img/btn/btn_setup_alert.png");
+	top: 380px;
+	left: 60px;
+}
+.BtnSetupNoAlert {
+	position: absolute;
+	width: 143px;
+	height: 31px;
+	background-image: url("../img/btn/btn_setup_noalert.png");
+	top: 380px;
+	left: 204px;
+}
+.BtnSetupAlertDivide {
+	position: absolute;
+	width: 1px;
+	height: 31px;
+	background-color: gray;
+	top: 380px;
+	left: 203px;
+}
+.txtSetupFinished {
+	position: absolute;
+	top: 100px;
+	left: 140px;
+}
+.btnSetupFinished {
+	position: absolute;
+	width: 204px;
+	height: 59px;
+	background-image: url("../img/btn/btn_setup_start.png");
+	left: 98px;
+	top: 330.5px;
 }
