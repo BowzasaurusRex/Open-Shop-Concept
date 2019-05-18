@@ -1,0 +1,57 @@
+body {
+	background-color: black;
+}
+.screen {
+	position: absolute;
+	width: 400px;
+	background-color: white;
+	background: url("img/common/bg.png");
+}
+.header {
+	position: absolute;
+	width: 400px;
+	height: 240px;
+	background-color: white;
+}
+.headerLine {
+	position: absolute;
+	width: 400px;
+	height: 5px;
+	background-color: rgb(97, 196, 9);
+	top: 183px;
+}
+.sectionTitle {
+	width: 312px;
+	height: 27px;
+	margin-left: 44px;
+}
+.txtTitle {
+	position: absolute;
+	margin-top: 3px;
+	margin-left: 10px;
+	color: white;
+}
+.sectionCommunity {
+	width: 312px;
+	margin-left: 44px;
+	margin-top: 5px;
+}
+.txtCommunity {
+	position: absolute;
+	font-weight: bold;
+	left: 90px;
+	margin-top: 10px;
+	color: black;
+}
+.divideCommunity {
+	border-top: dashed 1px;
+	border-bottom: none;
+	width: 312px;
+	margin-left: 44px;
+	margin-top: 50px;
+}
+.txtFooter {
+	position: relative;
+	margin-top: 70px;
+	color: gray;
+}
