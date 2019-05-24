@@ -55,3 +55,83 @@ body {
 	margin-top: 70px;
 	color: gray;
 }
+
+.communityHeader1 {
+	width: 400px;
+	height: 149px;
+	background-color: white;
+}
+.communityHeader2 {
+	width: 400px;
+	height: 46px;
+	background-color: white;
+}
+.communityHeader3 {
+	width: 400px;
+	height: 29px;
+	background-image: url('../../img/community/header.png');
+}
+.communityIcon {
+	position: absolute;
+	left: 6px;
+	top: 149px;
+}
+.communityTitle {
+	position: absolute;
+	left: 49px;
+	top: 145px;
+	font-weight: bold;
+}
+.communityPlatform {
+	position: absolute;
+	top: 183px;
+	left: 363px;
+}
+.communityRating {
+	width: 400px;
+	height: 28px;
+	background-color: rgb(217, 217, 217);
+}
+.communityRatingText {
+	margin-top: 5px;
+	margin-left: 45px;
+	position: absolute;
+}
+.post {
+	margin-left: 40px;
+}
+.postMiddle {
+	background-image: url("img/common/post_middle.png");
+	background-repeat: repeat-y;
+}
+.postUserIcon {
+	margin-left: 5px;
+	margin-top: -8px;
+}
+.postUserName {
+	position: absolute;
+	margin-top: -40px;
+	margin-left: 50px;
+	font-weight: bold;
+}
+.postTime {
+	position: absolute;
+	margin-top: -20px;
+	margin-left: 50px;
+	color: gray;
+}
+.postText {
+	margin-left: 10px;
+}
+.postBottom {
+	width: 320px;
+	height: 24px;
+	background-image: url("img/common/post_bottom.png");
+	margin-top: -16px;
+}
+.postDrawing {
+	width: 318px;
+	height: 121px;
+	margin-left: 1px;
+	margin-bottom: 15px;
+}
