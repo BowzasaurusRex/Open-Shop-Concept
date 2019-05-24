@@ -103,6 +103,7 @@ body {
 .postMiddle {
 	background-image: url("img/common/post_middle.png");
 	background-repeat: repeat-y;
+	margin-top: -1px;
 }
 .postUserIcon {
 	margin-left: 5px;
